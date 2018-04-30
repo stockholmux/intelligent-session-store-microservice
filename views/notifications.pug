@@ -1,0 +1,7 @@
+extends navbar
+block content
+  +list-group-custom()
+    each notification in notifications
+      +list-group-item(notification.link, notification.seen ? "true" : "false")
+        h4.list-group-item-heading #{notification.text}
+    

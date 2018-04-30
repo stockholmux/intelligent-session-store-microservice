@@ -1,0 +1,10 @@
+extends navbar
+block content
+  .jumbotron
+    h1 Demo Store
+  if featuredPages.length > 0
+    h2 Featured Products
+    ul
+      for featured in featuredPages
+        li
+          a(href= featured) #{featured}

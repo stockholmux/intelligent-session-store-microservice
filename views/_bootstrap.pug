@@ -1,0 +1,21 @@
+include components/alerts
+include components/navbar
+include components/navs
+include components/panels
+include components/list-groups.pug
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport",content="width=device-width, initial-scale=1")
+		title= title
+		block styles
+			link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+	body
+		block body
+			
+		block scripts
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+			script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
